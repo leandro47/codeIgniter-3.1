@@ -1,4 +1,5 @@
 <h4>PAGINA 1</h4>
+<img src="<?php echo base_url('assets/images/img1.jpg') ?>" width="100px">
 <p>pagina 1 Duis elit elit ullamco quis magna. Est veniam cillum sit anim qui do aliquip ullamco nisi do aliquip excepteur adipisicing. Ad commodo exercitation culpa pariatur ipsum aliquip consectetur ipsum exercitation cupidatat. Proident quis aute reprehenderit dolore proident minim minim qui occaecat exercitation reprehenderit. Laborum quis enim pariatur amet deserunt sunt sint cupidatat.
 
 Culpa dolor ex esse quis qui. Fugiat nulla anim officia est id incididunt ea. Occaecat laborum nulla sint aliquip tempor cillum ut enim adipisicing quis magna occaecat aute ipsum. Deserunt nulla ea veniam fugiat officia dolore eu magna id ipsum aliqua sunt aliquip.
