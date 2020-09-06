@@ -14,7 +14,7 @@
     <hr>
     <!-- Nav  -->
     <a href="<?php echo site_url('geral') ?>">Pagina 1</a> |
-    <a href="<?php echo site_url('geral/p2') ?>">Pagina 2</a> |
-    <a href="<?php echo site_url('geral/p3') ?>">Pagina 3</a>
+    <a href="<?php echo site_url('geral/p2/Leandro') ?>">Pagina 2</a> |
+    <a href="<?php echo site_url('geral/p3/Leandro47') ?>">Pagina 3</a>
 
     <hr>
