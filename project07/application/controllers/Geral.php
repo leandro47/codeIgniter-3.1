@@ -7,6 +7,21 @@ class Geral extends CI_Controller
 	// ==================================================
 	public function index()
 	{
+
+		if ($this->session->has_userdata('id'))
+			$this->menuInicial();
+		else
+			$this->quadroLogin();
+	}
+
+	// ==================================================
+	public function quadroLogin()
+	{
+		//se existir uma sessão ativa, salta para o quadro do menu inicial
+		if ($this->session->has_userdata('id_usuario')) {
+			$this->menuInicial();
+		}
+
 		$this->load->view('includes/header');
 		$this->load->view('includes/cabecalho');
 
@@ -14,6 +29,24 @@ class Geral extends CI_Controller
 
 		$this->load->view('includes/rodape');
 		$this->load->view('includes/footer');
+	}
+
+	public function verificarLogin()
+	{
+		$this->load->model('usuarios');
+		if ($this->usuarios->verificar_Login())
+			echo 'ok';
+		else
+			echo 'nao';
+	}
+
+	public function menuInicial(){
+		if(!$this->session->has_userdata('id')){
+			$this->quadroLogin();
+		}
+		else{
+			redirect('gestao/home');
+		}
 	}
 
 	public function setup()
