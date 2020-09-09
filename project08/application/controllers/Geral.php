@@ -1,13 +1,20 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Geral extends CI_Controller {
+class Geral extends CI_Controller
+{
 
 	public function index()
 	{
 		// $this->load->view('includes/inicio');
 		// $this->load->view('includes/final');
-		$this->load->helper('matematica');
-		echo '<p>'.subtracao(5,8).'</p>';
+		$this->load->library('session');
+
+		$this->session->set_userdata('usuario', 'LEANDRO SILVA');
+
+		// $this->session->sess_destroy();
+		$this->session->unset_userdata('usuario');
+		echo $this->session->usuario;
+
 	}
 }
