@@ -324,7 +324,7 @@ $config['cache_query_string'] = FALSE;
 | https://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = hex2bin('3928298badfb485a20553b1d2a58004d65b04bf3f8c712bed13fd45db684320cdbccc61c8b4be750930696c764838542d1bad7dc8901eb599e09fd0445810e450f19985290667994da17d680ea6df322cb59c23219ff25eb54c4673bf0c3eeab3e1ed4e8ebf2b59081bf7f21b5e6bf83c5ef0e1437bb22dc477ee74b923e4bcffcf4f53e317e06060f38b5cb93a9e65e69595d3c4d1bffd03f1de90396f876f8c8cff098333a34c8c52fa76f4222b09b91b7c6933534690e6b22441d4d28efc72f2e65001d190be7cf7f4e5550275e45c80fb88ba9dce3911420463bcb08a02cf2522b3a35289cd33391d8997667007b443f0f9556fbe5acb015e3e427a5');
 
 /*
 |--------------------------------------------------------------------------
