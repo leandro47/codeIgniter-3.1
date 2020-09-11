@@ -7,34 +7,40 @@ class Geral extends CI_Controller
 	public function index()
 	{
 		// ==================================================
+		// remover index.php
+		// ==================================================
+		echo '<a href="'. site_url('geral/novo').'">AQUI</a>';
+
+
+		// ==================================================
 		// ENVIO DE EMAIL COM PHPMAILER
 		// ==================================================
-		$this->load->library('Emails');
+		// $this->load->library('Emails');
 
-		//prepara os dados
-		$nome = 'leandro teste';
-		$email = 'contato@mallon.com.br';
-		$localizacao = 'Mafra';
-		$telefone = '47988387536';
-		$texto_mensagem = 'Olá eu sou um teste de e-mail';
+		// //prepara os dados
+		// $nome = 'leandro teste';
+		// $email = 'contato@mallon.com.br';
+		// $localizacao = 'Mafra';
+		// $telefone = '47988387536';
+		// $texto_mensagem = 'Olá eu sou um teste de e-mail';
 
-		$assunto = 'Texto do assunto';
-		$mensagem = "Mensagem enviada do site xpto<hr>" .
-			"Nome: <b>$nome</b><br>" .
-			"Email: <b>$email</b><br>" .
-			"Localização: <b>$localizacao</b><br>" .
-			"Telefone: <b>$telefone</b><br>" .
-			"Mensagem: <b>$texto_mensagem</b><br>";
+		// $assunto = 'Texto do assunto';
+		// $mensagem = "Mensagem enviada do site xpto<hr>" .
+		// 	"Nome: <b>$nome</b><br>" .
+		// 	"Email: <b>$email</b><br>" .
+		// 	"Localização: <b>$localizacao</b><br>" .
+		// 	"Telefone: <b>$telefone</b><br>" .
+		// 	"Mensagem: <b>$texto_mensagem</b><br>";
 
-		if ($this->emails->enviar($assunto, $mensagem)) {
-			//mensagem enviada com sucesso
-			//apresentar view sobre o sucesso
-			echo 'enviado com sucesso';
-		} else {
-			//erro no envio da mensagem
-			//apresentar view sobre o erro
-			echo 'Erro ao enviar email';
-		}
+		// if ($this->emails->enviar($assunto, $mensagem)) {
+		// 	//mensagem enviada com sucesso
+		// 	//apresentar view sobre o sucesso
+		// 	echo 'enviado com sucesso';
+		// } else {
+		// 	//erro no envio da mensagem
+		// 	//apresentar view sobre o erro
+		// 	echo 'Erro ao enviar email';
+		// }
 
 		// ==================================================
 		// ENCRIPTAÇÃO DE DADOS
@@ -74,5 +80,9 @@ class Geral extends CI_Controller
 		// $this->zip->add_data($ficheiro, $texto);
 		// $this->zip->archive('backup.zip');
 		// $this->zip->download('backup.zip');
+	}
+
+	public function novo(){
+		echo 'sem index.php';
 	}
 }

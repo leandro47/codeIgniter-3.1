@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/codeIgniter-3.1/project09/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
